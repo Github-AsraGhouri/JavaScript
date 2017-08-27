@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
      <title>Document</title>
     <style>
     .id {
@@ -24,7 +24,7 @@
 
     td, th {
         border: 1px solid #dddddd;
-        text-align: center;
+        text-align: left;
         padding: 8px;
     }
 
@@ -37,10 +37,10 @@
      }
    
     #button{
-        width:30%;
+        width:250px;
+        margin-left:550px;
         height: 50px;
         margin-bottom: 10px;
-        margin: 0 auto
     }
     #stuInfo{
         margin-left:5px;
@@ -89,11 +89,11 @@
     </div>
 </div> 
 </center>
-    <div class="container">
-        <button class="btn btn-md btn-block animated-button victoria-four" id="button" onclick="addRow()">Add Info</button>
+    <div class="col-md-3 col-sm-3 col-xs-6">
+    <button class="btn btn-sm animated-button victoria-four" id="button" onclick="addRow()">Add Info</button>
     </div>
-    <br>
-    <table id="stuInfo" class="w3-container w3-center w3-animate-opacity" class="w3-ul w3-hoverable" style="max-width:1024px; margin:0 auto">
+
+    <table id="stuInfo" class="w3-container w3-center w3-animate-opacity" class="w3-ul w3-hoverable">
             <tr class="w3-black">        
             <th>NAME</th>
              <th>Phone</th>
@@ -220,8 +220,12 @@
        tit.innerHTML = document.getElementById('Etitle').value;
        company.innerHTML = document.getElementById('Ecompany').value;
        dlt.innerHTML = "<button type='button' value='Delete' class='btn btn-5 btn-5b icon-remove' onclick='myFunction(this)'>Delete</button>";
-        }    
+        }
+
+
+    
 
 </script>
+
 </body>
 </html>
